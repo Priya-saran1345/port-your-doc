@@ -1,0 +1,1000 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="sticky top-0 index bg-white  header shadow-xl">
+        <div class="navbar w-full lg:w-[75%] py-4  mx-auto">
+         
+            <div class="navbar-start ">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn  btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu navbar-nav menu-sm dropdown-content bg-base-100 rounded-box z-[1]  text-slate-400 text-xl mt-3 w-52 p-2 shadow">
+                        <li class="nav-item active"><a href="index.html" class=" nav-link">Home</a></li>
+                        <li class="nav-item "><a href="#work_div" class="nav-link">How It Works</a></li>
+                        <li class="nav-item "><a href="#popular_div" class="nav-link">Popular</a></li>
+                        <li class="nav-item "><a href="#feature_div" class="nav-link">Features</a></li>
+                        <li class="nav-item "><a href="#choose_div" class="nav-link">Support</a></li> 
+                    </ul>
+                </div>
+                <a class="px-4 text-xl font-bold cursor-pointer" href="index.html">
+                    <img src="./image/logo.png" class=" h-8 md:h-9 w-sm" alt="">
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu navbar-nav menu-horizontal text-slate-400 text-[18px] font-medium text-xl px-1">
+                    <li class="nav-item active"><a href="index.html" class=" nav-link">Home</a></li>
+                    <li class="nav-item "><a href="#work_div" class="nav-link">How It Works</a></li>
+                    <!-- popular_div -->
+                    <li class="nav-item "><a href="#popular_div" class="nav-link">Popular</a></li>
+
+                    <li class="nav-item "><a href="#feature_div" class="nav-link">Features</a></li>
+                    <li class="nav-item "><a href="#choose_div" class="nav-link">Support</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <!-- hover:text-blueish   hover:bg-white -->
+                <button
+                    class=" rounded-full flex justify-center cursor-pointer items-center text-white px-4  md:px-10 h-14 md:h-16 bg-blueish  ease-in-out duration-300 border-4 border-blueish">
+                    <a class="font-medium  text-lg md:text-xl" href="contact.html">Contact Us </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner pb-28 md:pb-0" id="home">
+            <div class="w-[90%] mx-auto  md:mx-auto flex flex-col justify-center items-center h-100vh lg:w-[75%] md:min-h-[80vh]">
+                <div class="capitalize text-center mx-auto">
+                    <h1 class="text-6xl mt-24 md:mt-2 font-bold mb-6">
+                        Effortlessly
+                    </h1>
+                    <h1 class="text-6xl text-blueish font-bold mb-7">
+                        Convert <span class="text-black">your</span> Documents
+                    </h1>
+                    <p class="text-xl font-medium mb-7">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut,
+                        cupiditate.
+                    </p>
+                </div>
+                <div class="bg-white w-[90%] rounded-xl px-16">
+                    <form action="">
+                        <div class="flex items-center w-[90%] flex-wrap justify-center xl:flex-nowrap gap-10 py-4">
+                            <div class="flex items-center md:border-r-2 text-xl font-medium py-5 px-4 border-slate-300">
+                                <label for="file-upload" class="custom-file-button w-52"><p>Upload Document</p></label>
+                                <!-- Hidden file input -->
+                                <input type="file" id="file-upload" class="custom-file-input">
+                            
+                                <!-- Display area for the file name -->
+                                <!-- <div id="file-name" class="file-name">No file chosen</div> -->
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-upload" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                    <path
+                                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                </svg>
+                            </div>
+                            <div class="md:border-r-2 py-5 px-8 border-slate-300 ">
+                                <select id="cars" name="cars" class="text-blueish text-xl font-medium">
+                                    <option disabled selected class="text-blueish">Document Type</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="fiat">Fiat</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="md:border-r-2 py-5 px-8 border-slate-300 ">
+                                <select id="cars" name="cars" class="text-blueish text-2xl font-medium">
+                                    <option disabled selected class="text-blueish">Convert to</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="fiat">Fiat</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="flex items-center">
+                                <button type="submit"
+                                    class="px-16 hover:bg-blueish text-blueish font-medium hover:text-white duration-200 ease-in-out bg-white border-2 border-blueish rounded-full py-3 text-2xl">
+                                    <a href="">Convert</a>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="w-full blue-banner" id="work_div">
+            <div class="w-[90%] lg:w-[75%] mx-auto text-white py-24">
+                <div>
+                    <p class="capitalize text-white text-5xl text-center font-bold">how it works?</p>
+                    <p class="text-xl text-center   w-[90%] lg:w-[65%] mx-auto mt-8">
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Doloribus odio, veritatis cupiditate velit deleniti, aliquid eius obcaecati
+                        nemo
+                        incidunt eum aspernatur totam placeat inventore fuga temporibus aperiam omnis quod, soluta
+                        tempora
+                        ducimus! Vel, sequi magni non laborum, voluptate nesciunt perferendis dolor voluptatum,
+                        perspiciatis
+                        quibusdam exercitationem dignissimos quae repellendus atque sed.</p>
+                </div>
+            </div>
+            <div class="flex justify-center flex-wrap items-center pb-32 gap-5">
+                <div class="text-center">
+                    <p class="text-blue-400 text-5xl font-bold mb-3 works-card-counting">01</p>
+                    <p class="text-white text-3xl font-bold ">Uploard <br> your file</p>
+                    <p class="text-white text-xl mt-4">Choose the document <br> you want to convert</p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-7">
+
+                    <div class=" mt-8 rotate-90 sm:rotate-[-90]">
+                        <img src="./image/arrow-work.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-blue-400 text-5xl font-bold mb-3 works-card-counting">02</p>
+                        <p class="text-white text-3xl font-bold ">Select the <br> Input Formate</p>
+                        <p class="text-white text-xl mt-4">Pick from a wide range <br> of file formates</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row  items-center gap-7">
+
+                    <div class=" mt-8 rotate-90 sm:rotate-[-90]">
+                        <img src="./image/arrow-work.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-blue-400 text-5xl font-bold mb-3 works-card-counting">03</p>
+                        <p class="text-white text-3xl font-bold">Select the <br> Output Formate</p>
+                        <p class="text-white text-xl mt-4">Pick from a wide range <br> of file formates</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-7">
+
+                    <div class=" mt-8 rotate-90 sm:rotate-[-90]">
+                        <img src="./image/arrow-work.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-blue-400 text-5xl font-bold mb-3 works-card-counting">04</p>
+                        <p class="text-white text-3xl font-bold ">Convert <br> and Download</p>
+                        <p class="text-white text-xl mt-4">Get your converted <br> file instantly</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="w-[95%]  lg:w-[75%]  mx-auto  py-24" id="popular_div">
+            <div class="text-center  w-[90%]  mx-auto">
+
+                <p class="capitalize  text-5xl  font-bold"> Popular categories</p>
+                <p class="text-2xl mb-4 mt-5 mx-auto  lg:w-[60%]">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    Doloribus odio,
+                    veritatis cupiditate velit deleniti, aliquid eius obcaecati 
+                </p>
+                <p class="text-3xl mb-6 text-black font-bold">Convert Your file to</p>
+                <div class="mb-20 flex mx-auto flex-wrap justify-center gap-4 mt-5 button-outer-div">
+                    <button
+                        class="unactive-btn hover:bg-blueish   rounded-full py-2 px-5 text-xl font-medium hover:text-white" id="jpg_btn" onclick="observeDiv('jpg')">
+                          .JPG</button>
+                    <button
+                        class="hover:bg-blueish unactive-btn rounded-full py-2 px-5 text-xl font-medium hover:text-white" id="png_btn" onclick="observeDiv('png')">
+                            .PNG</button>
+                    <button
+                        class=" hover:bg-blueish unactive-btn rounded-full py-2 px-5 text-xl font-medium hover:text-white" id="gif_btn"  onclick="observeDiv('gif')">
+                           .GIF</button>
+                    <button
+                        class=" hover:bg-blueish unactive-btn rounded-full py-2 px-5 text-xl font-medium hover:text-white" id="tiff_btn" onclick="observeDiv('tiff')">
+                           .TIFF</button>
+                    <button
+                        class="  hover:bg-blueish unactive-btn rounded-full py-2 px-5 text-xl font-medium hover:text-white" id="webp_btn" onclick="observeDiv('webp')">
+                         .WEBP</button>
+                    <button
+                        class=" hover:bg-blueish unactive-btn rounded-full py-2 px-5 text-xl font-medium hover:text-white"id="pdf_btn" onclick="observeDiv('pdf')">
+                         .PDF</button>
+                    <button
+                        class=" hover:bg-blueish unactive-btn rounded-full py-2 px-5 text-xl font-medium hover:text-white" id="other_btn" onclick="observeDiv('other')">
+                           .OTHER</button>
+
+                </div>
+            </div>
+            <div class=" h-[150vh] md:h-[90vh] lg:h-[60vh] overflow-scroll observing-section">
+                <div class="jpg flex flex-wrap  justify-center lg:justify-start gap-8 mb-4 " id="jpg">
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Jpg</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Jpg</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Jpg</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Jpg</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Jpg</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Jpg</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="png flex flex-wrap justify-center lg:justify-start gap-8 mb-4" id="png">
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Png</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Png</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Png</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Png</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Png</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to Png</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="giff flex flex-wrap justify-center lg:justify-start gap-8 mb-4 " id="gif">
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to giff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to giff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to giff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to giff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to giff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to giff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tiff flex flex-wrap justify-center lg:justify-start gap-8 mb-4" id="tiff">
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to tiff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to tiff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to tiff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to tiff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to tiff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to tiff</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="webp flex flex-wrap justify-center lg:justify-start gap-8  mb-4" id="webp">
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to webp</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to webp</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to webp</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to webp</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to webp</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to webp</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pdf flex flex-wrap justify-center lg:justify-start gap-8 mb-4 " id="pdf">
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to pdf</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to pdf</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to pdf</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to pdf</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to pdf</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to pdf</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="other flex flex-wrap justify-center lg:justify-start gap-8 mb-4 " id="other">
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to other</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to other</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to other</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to other</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to other</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl  items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="popular-card p-12 text-white rounded-xl">
+                        <p class="text-2xl font-medium">WEBP to other</p>
+                        <div class="flex justify-center py-10  items-center">
+                            <img src="./image/gif-to-jpg.png (1).png" alt="">
+                        </div>
+                        <div>
+                            <a href="" class="flex justify-center gap-5 text-xl items-center">Convert Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="w-100 blue-banner" id="feature_div">
+            <div class="w-[95%] xl:w-[75%] mx-auto mx-10  py-24">
+                <div class="text-center lg:text-left mx-auto ">
+                    <p class="capitalize  text-6xl text-white  font-bold">Key Features</p>
+                    <p class="text-2xl text-white  mb-12 w-[90%] mt-5 mx-auto lg:mx-0  lg:w-[60%]">Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Doloribus odio,
+                        veritatis cupiditate velit deleniti, aliquid eius obcaecati nemo incidunt eum aspernatur totam
+                        placeat
+                    </p>
+                </div>
+                <div class="flex flex-wrap xl:flex-nowrap justify-center  gap-6">
+                    <div class="bg-white rounded-lg px-12 py-10 min-w-xs sm:max-w-xs 2xl:max-w-sm feature-card img_group">
+                        <div class="w-fit p-3 rounded-sm mb-4  feature-img">
+                            <img src="./image/fearture1.svg" alt="" class="img_invert">
+                        </div>
+                        <p class="text-2xl capitalize font-bold mb-4 feature-card-heading">multiple formates supported
+                        </p>
+                        <div>
+                            <p class="text-xl text-slate-500">Convert PDFs, Word documents, images, and more.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl px-12 py-10 min-w-xs sm:max-w-xs xl:max-w-sm feature-card">
+                        <div class="w-fit p-3 rounded-sm mb-4  feature-img">
+                            <img src="./image/feature2.svg" alt="">
+                        </div>
+                        <p class="text-2xl capitalize font-bold mb-4 feature-card-heading">User-Friendly Interface</p>
+                        <div>
+                            <p class="text-xl text-slate-500">Simple drag-and-drop functionality for quick conversions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl px-12 py-10 min-w-xs sm:max-w-xs xl:max-w-sm feature-card">
+                        <div class="w-fit p-3 rounded-sm mb-4  feature-img">
+                            <img src="./image/feature3.svg" alt="">
+                        </div>
+                        <p class="text-2xl capitalize font-bold mb-4 feature-card-heading">Fast Processing</p>
+                        <div>
+                            <p class="text-xl text-slate-500">Convert files in seconds, without compromising quality.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl px-12 py-10 min-w-xs sm:max-w-xs xl:max-w-sm feature-card">
+                        <div class="w-fit p-3 rounded-sm mb-4  feature-img">
+                            <img src="./image/feature4.svg" alt="">
+                        </div>
+                        <p class="text-2xl capitalize font-bold mb-4 feature-card-heading">Secure
+                            and Private</p>
+                        <div>
+                            <p class="text-xl text-slate-500">Your files are protected with top-tier encryption.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[95%]  lg:w-[75%] flex-wrap xl:flex-nowrap flex items-center gap-10 justify-between mx-auto  py-24 "
+            id="choose_div">
+            <div class=" w-full xl:w-fit">
+
+                <p class="capitalize text-5xl text-center 2xl:text-left font-bold"> Why <br> choose us? </p>
+            </div>
+            <div class="flex flex-wrap 2xl:flex-nowrap justify-center  lg:justify-end  gap-5">
+                <div class="choose-card max-w-xs p-8 rounded-lg">
+                    <div>
+                        <p class="text-white text-7xl  mb-3">01</p>
+                        <p class="text-white text-3xl font-base">Quick Turnaround </p>
+                        <p class="text-white text-lg mt-4">Get your documents ready in no time.</p>
+                    </div>
+                </div>
+                <div class="choose-card max-w-xs p-8 rounded-lg">
+                    <div>
+                        <p class="text-white text-7xl  mb-3">02</p>
+                        <p class="text-white text-3xl font-base">No Installation Required</p>
+                        <p class="text-white text-lg mt-4">Convert files directly from your browser.</p>
+                    </div>
+                </div>
+                <div class="choose-card  max-w-xs p-8 rounded-lg">
+                    <div>
+
+                        <p class="text-white text-7xl  mb-3">03</p>
+                        <p class="text-white text-3xl font-base">Free and Premium Options</p>
+                        <p class="text-white text-lg mt-4">Choose the plan that suits your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blue-banner pt-36 w-full">
+            <div class="flex w-[95%] flex-wrap lg:flex-nowrap  mx-auto lg:w-[75%] justify-center items-center h-auto">
+                <div class=" flex flex-wrap lg:flex-nowrap">
+                    <div class="flex bg-white  py-8 flex-col justify-center px-5 md:px-20">
+                        <p class=" text-4xl 2xl:text-5xl font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <div class="w-full ">
+                            <button class="bg-blueish  text-white text-xl font-medium py-4 rounded-lg mt-8 xl:mt-20 px-10">Talk
+                                to our
+                                expert</button>
+                        </div>
+                    </div>
+                    <div class=" w-full lg:min-w-[50%] h-full ">
+                        <img src="./image/last-girl-img.png" class="object-cover w-full h-full"
+                            alt="Description of image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-[#ECECEC] min-h-[35vh] mt-[-20vh] ">
+        </div>
+    </main>
+    <footer>
+        <div class="w-100 pt-24">
+            <div class="flex w-full mx-auto py-5 md:w-[75%] justify-center border-slate-300 border-b-2 "><img
+                    src="./image/logo.png" class="h-9" alt=""></div>
+        </div>
+        <div class="w-[95%] lg:w-[75%] mt-9 mx-auto mb-12 flex-wrap flex justify-left md:justify-center gap-20">
+            <div>
+                <a href="#" class=" text-xl text-slate-500 font-medium ">
+                    <span class="font-bold text-xl text-black">Email:</span>
+                    info@portyourdoc.com </a>
+            </div>
+            <div>
+                <a href="#" class="text-xl text-slate-500 font-medium">
+                    <span class="font-bold text-black text-xl">Phone:</span>
+                    +1-800-123-4567
+                </a>
+            </div>
+            <div>
+                <a href="#" class="text-xl text-slate-500 font-medium ">
+                    <span class="font-bold text-xl text-black">Address:</span>
+                    123 Document Street, Suite <br> 100, Conversion City, XY 12345 </a>
+            </div>
+        </div>
+        <div class="bg-blueish w-full">
+            <div class="w-[95%] flex justify-center md:justify-between flex-wrap py-3 text-white text-md lg:w-[75%] mx-auto">
+                <p>© 2024 PortYourDOC. All Rights Reserved.</p>
+                <div class=" justify-center lg:justify-end flex-wrap gap-5 flex">
+                    <p class="underline underline-offset-1">Terms of Services</p>
+                    <p class="underline underline-offset-1">Privacy Policy</p>
+                    <p class="underline underline-offset-1">Cookies Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blueish: '#006cd9',
+                        lightbrown: '#ECECEC'
+
+
+                    }
+                }
+            }
+        }
+    </script>
+<script>
+    document.getElementById('file-upload').addEventListener('change', function() {
+    const fileName = this.files.length > 0 ? this.files[0].name : 'No file chosen';
+    document.getElementById('file-name').textContent = fileName;
+});
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="sticky top-0 index bg-white  header shadow-xl">
+        <div class="navbar w-full lg:w-[75%] py-4  mx-auto">
+         
+            <div class="navbar-start ">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1]  text-slate-400 text-lg	 mt-3 w-52 p-2 shadow">
+                        <li class="nav-item active"><a href="index.html" class=" nav-link">Home</a></li>
+                        <li class="nav-item "><a href="#work_div" class="nav-link">How It Works</a></li>
+                        <li class="nav-item "><a href="#popular_div" class="nav-link">Popular</a></li>
+                        <li class="nav-item "><a href="#feature_div" class="nav-link">Features</a></li>
+                        <li class="nav-item "><a href="#choose_div" class="nav-link">Support</a></li>                    </ul>
+                </div>
+                <a class="px-4 text-xl font-bold cursor-pointer" href="index.html">
+                    <img src="./image/logo.png" class=" h-8 md:h-9 w-sm" alt="">
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu navbar-nav menu-horizontal text-slate-400 text-[18px] font-medium text-xl px-1">
+                    <li class="nav-item active"><a href="index.html" class=" nav-link">Home</a></li>
+                    <li class="nav-item "><a href="#work_div" class="nav-link">How It Works</a></li>
+                    <!-- popular_div -->
+                    <li class="nav-item "><a href="#popular_div" class="nav-link">Popular</a></li>
+
+                    <li class="nav-item "><a href="#feature_div" class="nav-link">Features</a></li>
+                    <li class="nav-item "><a href="#choose_div" class="nav-link">Support</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <!-- hover:text-blueish   hover:bg-white -->
+                <button
+                    class=" rounded-full flex justify-center cursor-pointer items-center text-white px-4  md:px-10 h-14 md:h-16 bg-blueish  ease-in-out duration-300 border-4 border-blueish">
+                    <a class="font-medium  text-lg md:text-xl" href="contact.html">Contact Us </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+
+
+        <div class="h-[44vh] ">
+            <div class="mx-auto w-[95%]  lg:[w-75%] xl:w-[40%]">
+
+                <p class="text-4xl font-bold text-center mt-12 mb-3">Resize IMAGE
+                </p>
+                <p class="text-2xl text-slate-400 text-center">Resize <span class="extention">JPG</span>, <span class="extention">PNG</span>, <span class="extention">SVG </span> or <span class="extention">GIF
+                    
+                </span> by defining new height and width pixels.
+                Change image dimensions in bulk.
+                </p>
+                    <div class="flex items-center  flex justify-center  text-xl font-medium py-5 px-4">
+                        <label for="file-upload" class="custom-file-button rounded-xl py-4 px-8 md:py-6 md:px-12 cursor-pointer hover:bg-blue-400 duration-200 ease-in-out bg-blueish text-white text-2xl "><p>Upload Document</p></label>
+                        <!-- Hidden file input -->
+                        <input type="file" id="file-upload" class="custom-file-input">
+                    </div>
+        </div>
+    </div>
+    </main>
+ 
+    <footer>
+        <div class="w-100 pt-24">
+            <div class="flex w-full mx-auto py-5 md:w-[75%] justify-center border-slate-300 border-b-2 "><img
+                    src="./image/logo.png" class="h-9" alt=""></div>
+        </div>
+        <div class="w-[95%] lg:w-[75%] mt-9 mx-auto mb-12 flex-wrap flex justify-left md:justify-center gap-20">
+            <div>
+                <a href="#" class=" text-xl text-slate-500 font-medium ">
+                    <span class="font-bold text-xl text-black">Email:</span>
+                    info@portyourdoc.com </a>
+            </div>
+            <div>
+                <a href="#" class="text-xl text-slate-500 font-medium">
+                    <span class="font-bold text-black text-xl">Phone:</span>
+                    +1-800-123-4567
+                </a>
+            </div>
+            <div>
+                <a href="#" class="text-xl text-slate-500 font-medium ">
+                    <span class="font-bold text-xl text-black">Address:</span>
+                    123 Document Street, Suite <br> 100, Conversion City, XY 12345 </a>
+            </div>
+        </div>
+        <div class="bg-blueish w-full">
+            <div class="w-[95%] flex justify-center md:justify-between flex-wrap py-3 text-white text-md lg:w-[75%] mx-auto">
+                <p>© 2024 PortYourDOC. All Rights Reserved.</p>
+                <div class=" justify-center lg:justify-end flex-wrap gap-5 flex">
+                    <p class="underline underline-offset-1">Terms of Services</p>
+                    <p class="underline underline-offset-1">Privacy Policy</p>
+                    <p class="underline underline-offset-1">Cookies Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blueish: '#006cd9',
+                        lightbrown: '#ECECEC'
+
+
+                    }
+                }
+            }
+        }
+    </script>
+<script>
+    document.getElementById('file-upload').addEventListener('change', function() {
+    const fileName = this.files.length > 0 ? this.files[0].name : 'No file chosen';
+    document.getElementById('file-name').textContent = fileName;
+});
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blueish: #006BD7;
+    --light-gradient:#006CD9;
+    --dark-gradient:#002F5E;
+     --lightbrown:#ECECEC;
+     --darkwhite:#fdfcfc;
+
+    
+}
+.hidden {
+    display: none;
+}
+.active{
+    color: var(--blueish);
+    font-size: 20px;
+}
+.banner{
+    background-color: F2F2F2;
+    background-image: url('./image/bg-grey.png');
+    background-size: 100% 100%;
+}
+.blue-banner{
+    background-image: url('./image/bg-blue.png');
+    background-size: 100%;
+    background-position: center;
+}
+.choose-card ,.popular-card{
+    background-image: linear-gradient(var(--light-gradient),var(--dark-gradient));
+   
+}
+
+
+.popular-card{
+    width: 255px;
+    min-height: 267px;
+    padding-left: 20px!important;
+    text-align: center;
+}
+.contact-subscribe-form{
+    background-image: url('./image/contact-last-div-img.png');
+}
+.feature-card:hover .feature-card-heading{
+    color: var(--blueish);
+
+}
+.active-btn{
+    background-color: var(--blueish);
+    color: white;
+}
+.unactive-btn{
+    background-color:var(--lightbrown);
+    color: rgb(109, 108, 108);
+}
+.feature-img::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 110%;
+    width: 5px;
+    background-color: var(--blueish);
+    /* border: rgb(175, 8, 8); */
+    transition: width;
+    border-radius: 6px;
+}
+.feature-card:hover .feature-img::before {
+    width: 100%;
+
+}
+
+.feature-img{
+    position: relative;
+}
+.feature-card:hover .feature-img::before {
+    animation: slideto 0.5s;
+
+}
+
+.feature-card:hover .feature-img>img {
+    /* filter: invert(1); */
+    filter: brightness(0) invert(1);
+    /* z-index: 999; */
+}
+.feature-card:not(:hover) .feature-img::before {
+    animation: slidefrom 0.5s;
+}
+/* .feature-card:not(:hover) .feature-img>img{
+    z-index: 0;
+} */
+@keyframes slideto {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes slidefrom {
+    from {
+        width: 100;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+/*  */
+.observing-section {
+    overflow: scroll; /* Allow scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.observing-section::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+.custom-file-input {
+    display: none; /* Hide the default file input */
+}
+
+/* Style the custom button */
+.custom-file-button {
+   
+    font-size: 20px;
+    color: #adacac;
+    cursor: pointer;
+    text-align: center;
+}
+
+.index{
+    z-index: 9999;
+}
+.index0{
+    z-index: 0;
+}
+.extention{
+color: var(--blueish);
+font-weight: bold;
+text-decoration: underline;
+
+}
+.works-card-counting{
+    /* color: black; */
+    -webkit-text-fill-color:var(--blueish);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
